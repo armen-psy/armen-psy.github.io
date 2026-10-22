@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Армен Арзуманян — психолог</title>
+<meta name="description" content="Консультации психолога онлайн и очно: тревога, отношения, внутренние конфликты. 50 минут, 3500 ₽.">
+<link rel="canonical" href="https://armen-psy.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#0F3CAD">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Армен Арзуманян">
+<meta property="og:title" content="Армен Арзуманян — психолог">
+<meta property="og:description" content="Консультации психолога онлайн и очно: тревога, отношения, внутренние конфликты. 50 минут, 3500 ₽.">
+<meta property="og:url" content="https://armen-psy.github.io/">
+<meta property="og:image" content="https://armen-psy.github.io/images/og-cover.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Армен Арзуманян, психолог. Консультации онлайн и очно">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="images/armen-960.webp" imagesrcset="images/armen-960.webp 960w, images/armen-1536.webp 1536w" imagesizes="(min-width: 1100px) 1050px, 100vw" fetchpriority="high">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,500;0,700;1,800&subset=cyrillic&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cobalt: #0F3CAD;
+    --ink: #0B1430;
+    --light: #CFE6FF;
+    --paper: #FFFFFF;
+    --muted: #5A6480;
+    --line: #DCE5F3;
+    --font: "Inter Tight", "Segoe UI", Roboto, Arial, sans-serif;
+    --gap: clamp(56px, 11vw, 96px);
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font: 400 17px/1.6 var(--font);
+    overflow-x: hidden;
+  }
+  a { color: inherit; }
+  a:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 3px; }
+  .hero a:focus-visible, .contacts a:focus-visible { outline-color: #fff; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+  section { padding: var(--gap) 0; }
+
+  .eyebrow {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 13px; font-weight: 500;
+    letter-spacing: .14em; text-transform: uppercase;
+    color: var(--cobalt);
+    margin-bottom: 24px;
+  }
+  .eyebrow::before { content: ""; width: 22px; height: 8px; border-radius: 99px; background: currentColor; flex: none; }
+  h2 {
+    font-weight: 700; font-size: clamp(34px, 6vw, 60px);
+    line-height: 1; letter-spacing: -.03em; margin-bottom: 20px;
+    text-wrap: balance;
+  }
+  h2 em { font-style: italic; font-weight: 800; color: var(--cobalt); }
+  .lead { font-size: clamp(18px, 2.2vw, 21px); max-width: 36ch; }
+  .muted { color: var(--muted); }
+
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 12px;
+    min-height: 56px; padding: 0 30px; border-radius: 999px;
+    font: 500 17px/1.2 var(--font); text-decoration: none; text-align: center;
+    border: 1px solid currentColor;
+    transition: transform .25s, background .25s, color .25s;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn svg { width: 20px; height: 20px; flex: none; }
+  .btn-light { background: var(--light); color: var(--ink); border-color: var(--light); }
+  .btn-cobalt { background: var(--cobalt); color: #fff; border-color: var(--cobalt); }
+
+  .text-link {
+    display: inline-flex; align-items: center; gap: 10px;
+    min-height: 44px; padding: 0 4px;
+    font-size: 16px; text-decoration: none;
+    border-bottom: 1px solid currentColor;
+  }
+  .text-link svg { width: 18px; height: 18px; flex: none; }
+
+  /* ========== HERO ========== */
+  .hero {
+    position: relative;
+    background: var(--cobalt);
+    color: var(--light);
+    padding: 14px;
+    overflow: hidden;
+  }
+  .frame {
+    position: relative;
+    border: 1px solid rgba(255,255,255,.75);
+    border-radius: 28px;
+    padding: clamp(28px, 6vw, 64px) clamp(20px, 5vw, 56px) 0;
+    overflow: hidden;
+  }
+  .hero-shapes { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+  @media (max-width: 819px) { .sh-ball, .sh-half { display: none; } }
+  .hero-top { position: relative; z-index: 2; max-width: 760px; }
+  .hero .eyebrow { color: var(--light); margin-bottom: 20px; }
+  .hero h1 {
+    font-weight: 800; font-style: italic;
+    font-size: clamp(32px, 8.6vw, 86px);
+    line-height: 1; letter-spacing: -.035em;
+    color: #fff;
+    margin-bottom: 20px;
+    text-wrap: balance;
+  }
+  .hero .lead { color: var(--light); margin-bottom: 28px; }
+  .cta-block { display: grid; gap: 12px; justify-items: start; }
+  .cta-note { font-size: 16px; color: var(--light); }
+  .facts { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; list-style: none; }
+  .facts li {
+    font-size: 16px; padding: 6px 14px; border-radius: 999px;
+    border: 1px solid rgba(207,230,255,.55); color: #fff;
+  }
+
+  .photo {
+    position: relative; z-index: 2;
+    margin: clamp(36px, 6vw, 56px) calc(-1 * clamp(20px, 5vw, 56px)) 0;
+    height: clamp(300px, 58vw, 600px);
+    border-radius: 999px 999px 0 0 / 240px 240px 0 0;
+    overflow: hidden;
+    background: #3a3530;
+  }
+  .photo img { width: 100%; height: 100%; object-fit: cover; object-position: 52% 22%; display: block; }
+  .photo::after {
+    content: ""; position: absolute; inset: 12px 12px 0; z-index: 2;
+    border: 1px solid rgba(255,255,255,.85); border-bottom: 0;
+    border-radius: inherit;
+  }
+  @media (min-width: 820px) { .photo { border-radius: 999px 999px 0 0 / 420px 420px 0 0; } }
+
+  /* ========== HELP ========== */
+  .help-list { list-style: none; margin-top: 36px; display: grid; gap: 12px; }
+  .help-list li {
+    display: grid; grid-template-columns: 52px 1fr; gap: 18px; align-items: center;
+    padding: 16px 26px 16px 16px;
+    border: 1px solid var(--line); border-radius: 999px;
+    font-size: clamp(17px, 2vw, 19px); line-height: 1.35;
+  }
+  .help-list .ic { width: 52px; height: 52px; border-radius: 50%; background: var(--light); display: grid; place-items: center; }
+  .help-list svg { width: 26px; height: 26px; }
+  .help-after { margin-top: 28px; }
+
+  /* ========== OFFER / FORMAT ========== */
+  .offer { background: var(--light); }
+  .format { display: grid; gap: 12px; margin: 36px 0 0; list-style: none; }
+  .format li {
+    background: var(--paper); border-radius: 24px; padding: 22px 24px;
+    display: grid; gap: 2px;
+  }
+  .format b { font-size: clamp(26px, 4vw, 34px); font-weight: 800; font-style: italic; letter-spacing: -.03em; color: var(--cobalt); line-height: 1.1; }
+  .format span { color: var(--muted); font-size: 16px; }
+  @media (min-width: 820px) { .format { grid-template-columns: repeat(2, 1fr); } }
+
+  .steps-title { font-size: 20px; font-weight: 700; margin: 56px 0 0; }
+  .steps { list-style: none; margin: 28px 0 0; display: grid; }
+  .step { display: grid; grid-template-columns: 30px 1fr; gap: 18px; position: relative; padding-bottom: 28px; }
+  .step:last-child { padding-bottom: 0; }
+  .step::before {
+    content: ""; position: absolute; left: 14.5px; top: 24px; bottom: 0;
+    border-left: 1px dashed var(--cobalt); opacity: .6;
+  }
+  .step:last-child::before { display: none; }
+  .dot { width: 30px; height: 30px; border-radius: 50%; background: var(--paper); display: grid; place-items: center; }
+  .dot::after { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--cobalt); }
+  .step:last-child .dot { background: var(--cobalt); }
+  .step:last-child .dot::after { background: #fff; }
+  .step p { font-size: 17px; line-height: 1.4; padding-top: 3px; }
+  @media (min-width: 820px) {
+    .steps { grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .step { grid-template-columns: 1fr; gap: 16px; padding-bottom: 0; }
+    .step::before { left: 30px; right: -24px; top: 14.5px; bottom: auto; border-left: 0; border-top: 1px dashed var(--cobalt); }
+  }
+  .offer .cta-block { margin-top: 44px; }
+  .offer .cta-note { color: var(--muted); }
+
+  /* ========== ABOUT ========== */
+  .about-grid { display: grid; gap: 8px; }
+  .about p {
+    font-weight: 700; font-size: clamp(24px, 4vw, 40px);
+    line-height: 1.18; letter-spacing: -.025em; max-width: 26ch;
+  }
+  .about p + p { margin-top: 16px; font-weight: 400; color: var(--cobalt); }
+  @media (min-width: 820px) { .about-grid { grid-template-columns: 220px 1fr; } }
+
+  /* ========== NUMBERS ========== */
+  .numbers { padding-top: 0; }
+  .nums { display: grid; gap: 16px; }
+  .nums > div { border: 1px solid var(--line); border-radius: 28px; padding: 30px 26px; }
+  .num {
+    display: block;
+    font-weight: 800; font-style: italic;
+    font-size: clamp(72px, 11vw, 112px);
+    line-height: .95; letter-spacing: -.05em;
+    color: var(--cobalt);
+    font-variant-numeric: tabular-nums;
+  }
+  .nums p { color: var(--muted); margin-top: 14px; font-size: 16px; }
+  @media (min-width: 820px) { .nums { grid-template-columns: repeat(3, 1fr); } }
+
+  /* ========== EDUCATION ========== */
+  .education { padding-top: 0; }
+  .edu-group { margin-top: 40px; }
+  .edu-title { font-size: 20px; font-weight: 700; margin-bottom: 8px; }
+  .edu-list { list-style: none; }
+  .edu-list li {
+    display: grid; grid-template-columns: 96px 1fr; gap: 12px; align-items: baseline;
+    padding: 20px 0; border-top: 1px solid var(--line);
+  }
+  .edu-list li:last-child { border-bottom: 1px solid var(--line); }
+  .edu-year {
+    font-weight: 800; font-style: italic; font-size: 24px; letter-spacing: -.03em;
+    color: var(--cobalt); font-variant-numeric: tabular-nums;
+  }
+  .edu-list b { display: block; font-weight: 700; font-size: 18px; line-height: 1.35; }
+  .edu-list span:not(.edu-year) { display: block; color: var(--muted); font-size: 16px; margin-top: 4px; line-height: 1.45; }
+  @media (min-width: 820px) {
+    .edu-list li { grid-template-columns: 140px 1fr; }
+    .edu-year { font-size: 30px; }
+  }
+
+  /* ========== REVIEWS ========== */
+  .reviews { padding-top: 0; }
+  .swipe-hint { font-size: 16px; margin-top: -4px; }
+  /* Телефон: карточки листаются вбок, чтобы 5 отзывов не растягивали страницу */
+  .review-list {
+    display: flex; gap: 12px; margin: 24px -20px 0; padding: 0 20px 8px;
+    overflow-x: auto; scroll-snap-type: x mandatory; scroll-padding: 0 20px;
+    -webkit-overflow-scrolling: touch; scrollbar-width: none;
+  }
+  .review-list::-webkit-scrollbar { display: none; }
+  .review-list:focus-visible { outline: 2px solid var(--cobalt); outline-offset: 2px; }
+  .review-list figure {
+    flex: 0 0 86%; scroll-snap-align: start;
+    background: var(--light); border-radius: 28px; padding: 28px 26px;
+    display: flex; flex-direction: column; justify-content: space-between; gap: 18px;
+  }
+  .review-list blockquote { font-size: 18px; line-height: 1.5; }
+  .review-list blockquote::before {
+    content: "«"; display: block; font-weight: 800; font-style: italic;
+    font-size: 56px; line-height: .6; color: var(--cobalt); margin-bottom: 12px;
+  }
+  .review-list blockquote::after { content: "»"; }
+  .review-list figcaption { color: var(--muted); font-size: 16px; }
+  @media (min-width: 820px) {
+    .swipe-hint { display: none; }
+    .review-list { display: block; columns: 2; column-gap: 16px; margin: 36px 0 0; padding: 0; overflow: visible; }
+    .review-list figure { break-inside: avoid; margin-bottom: 16px; }
+  }
+
+  /* ========== CONTACTS ========== */
+  .contacts-wrap { padding: 14px; background: var(--cobalt); }
+  .contacts {
+    position: relative; overflow: hidden;
+    border: 1px solid rgba(255,255,255,.75); border-radius: 28px;
+    color: var(--light);
+    padding: var(--gap) 0;
+  }
+  .contacts .wrap { position: relative; z-index: 2; }
+  .contacts .eyebrow { color: var(--light); }
+  .contacts h2 { color: #fff; }
+  .contacts h2 em { color: var(--light); }
+  .contacts .lead { color: var(--light); }
+  .contacts .cta-block { margin: 32px 0 24px; }
+  .secondary-links { display: flex; flex-wrap: wrap; gap: 8px 28px; }
+  .secondary-links .text-link { color: var(--light); border-color: rgba(207,230,255,.45); }
+  .contacts-shapes { position: absolute; right: -60px; bottom: -60px; width: 320px; height: 320px; pointer-events: none; }
+
+  footer { background: var(--cobalt); color: var(--light); font-size: 14px; padding: 4px 0 28px; text-align: center; }
+
+  /* ========== STICKY CTA ========== */
+  .sticky-cta {
+    position: fixed; z-index: 50;
+    left: 0; right: 0; bottom: 0;
+    padding: 12px 16px calc(12px + env(safe-area-inset-bottom, 0px));
+    background: var(--paper);
+    border-top: 1px solid var(--line);
+    transform: translateY(0);
+    transition: transform .35s ease, opacity .35s ease;
+  }
+  .sticky-cta .btn { width: 100%; }
+  .sticky-cta.is-hidden { transform: translateY(110%); opacity: 0; pointer-events: none; }
+  @media (max-width: 819px) { body { padding-bottom: 84px; } }
+  @media (min-width: 820px) {
+    .sticky-cta {
+      left: auto; right: 24px; bottom: 24px; padding: 0;
+      background: transparent; border: 0;
+    }
+    .sticky-cta .btn { width: auto; box-shadow: 0 10px 30px rgba(11,20,48,.22); }
+  }
+
+  @media (max-width: 480px) {
+    .cta-block, .cta-block .btn { width: 100%; }
+    .cta-block { justify-items: stretch; }
+    .btn { padding: 0 18px; gap: 10px; font-size: 16px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .sticky-cta, .btn { transition: none; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== 1. ПЕРВЫЙ ЭКРАН: ПОЛЬЗА ===== -->
+<header class="hero">
+  <div class="frame">
+    <svg class="hero-shapes" viewBox="0 0 1000 1000" preserveAspectRatio="xMaxYMin slice" aria-hidden="true">
+      <circle class="sh sh-ring" cx="900" cy="140" r="170" fill="none" stroke="#CFE6FF" stroke-width="1.2" opacity=".55"/>
+      <circle class="sh sh-ball" cx="830" cy="300" r="46" fill="#CFE6FF"/>
+      <path class="sh sh-half" d="M690 520 A110 110 0 0 1 910 520 Z" fill="none" stroke="#CFE6FF" stroke-width="1.2" opacity=".55"/>
+      <rect class="sh sh-cap" x="640" y="40" width="150" height="48" rx="24" fill="#CFE6FF" opacity=".18"/>
+    </svg>
+
+    <div class="hero-top">
+      <span class="eyebrow">Армен Арзуманян · психолог</span>
+      <h1>Станет спокойнее внутри и&nbsp;понятнее, что с&nbsp;вами происходит</h1>
+      <p class="lead">Индивидуальные консультации психолога. Тревога, отношения, внутренние конфликты.</p>
+      <div class="cta-block" id="hero-cta">
+        <a class="btn btn-light js-tg" href="https://t.me/Armenmonch" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M21 4L3 11l6 2 2 6 3-4 5 4 2-15z"/><path d="M9 13l8-6"/></svg>
+          Записаться на консультацию
+        </a>
+        <ul class="facts" aria-label="Формат консультаций">
+          <li>Онлайн и очно</li>
+          <li>50 минут</li>
+          <li>3500 ₽</li>
+          <li>На русском и армянском</li>
+        </ul>
+      </div>
+    </div>
+
+    <figure class="photo">
+      <img src="images/armen-960.webp" srcset="images/armen-960.webp 960w, images/armen-1536.webp 1536w" sizes="(min-width: 1100px) 1050px, 100vw" width="1536" height="1024" alt="Армен Арзуманян, психолог, сидит в кресле в кабинете" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+</header>
+
+<main>
+  <!-- ===== 2. ЧЕМ ПОМОГАЮ ===== -->
+  <section class="help">
+    <div class="wrap">
+      <span class="eyebrow">Чем помогаю</span>
+      <h2 class="reveal">Если вам <em>знакомо</em></h2>
+      <ul class="help-list">
+        <li class="reveal">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 26 26" fill="none" stroke="#0F3CAD" stroke-width="1.2" stroke-linecap="round"><path d="M2 14c2.5-3.5 5-3.5 7.5 0s5 3.5 7.5 0 4-3 7-1"/><path d="M2 8.5c2.5-3.5 5-3.5 7.5 0" opacity=".5"/></svg></span>
+          Тревога не отпускает, даже когда всё вроде бы хорошо.
+        </li>
+        <li class="reveal">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 26 26" fill="none" stroke="#0F3CAD" stroke-width="1.2"><circle cx="9.5" cy="13" r="7"/><circle cx="16.5" cy="13" r="7"/></svg></span>
+          В отношениях повторяются одни и те же сложности.
+        </li>
+        <li class="reveal">
+          <span class="ic" aria-hidden="true"><svg viewBox="0 0 26 26" fill="none" stroke="#0F3CAD" stroke-width="1.2" stroke-linecap="round"><path d="M3 23V14a10 10 0 0 1 20 0v9"/><circle cx="13" cy="14" r="3"/><path d="M13 2v3"/></svg></span>
+          Хочется одного, а делаете другое, и непонятно почему.
+        </li>
+      </ul>
+      <p class="lead muted help-after reveal">С этим можно разобраться. Вместе и в вашем темпе.</p>
+    </div>
+  </section>
+
+  <!-- ===== 3. ГЛАВНОЕ ПРЕДЛОЖЕНИЕ: ФОРМАТ И ПУТЬ ===== -->
+  <section class="offer">
+    <div class="wrap">
+      <span class="eyebrow">Консультации</span>
+      <h2 class="reveal">Как проходит <em>встреча</em></h2>
+      <p class="lead muted reveal">Индивидуальная работа: понимание себя, эмоциональная устойчивость, личностное развитие.</p>
+
+      <ul class="format">
+        <li class="reveal"><b>Онлайн и очно</b><span>Выбираете удобный формат</span></li>
+        <li class="reveal"><b>50 минут</b><span>Длительность одной встречи</span></li>
+        <li class="reveal"><b>3500 ₽</b><span>Стоимость консультации</span></li>
+        <li class="reveal"><b>Русский и армянский</b><span>Языки консультаций</span></li>
+      </ul>
+
+      <p class="steps-title reveal">С чего начать</p>
+      <ol class="steps">
+        <li class="step reveal"><i class="dot" aria-hidden="true"></i><p>Вы пишете в Telegram пару слов о запросе</p></li>
+        <li class="step reveal"><i class="dot" aria-hidden="true"></i><p>Договариваемся о времени первой встречи</p></li>
+        <li class="step reveal"><i class="dot" aria-hidden="true"></i><p>На встрече разбираемся, что с вами происходит</p></li>
+        <li class="step reveal"><i class="dot" aria-hidden="true"></i><p>Вы решаете, продолжать ли работу</p></li>
+      </ol>
+
+      <div class="cta-block">
+        <a class="btn btn-cobalt js-tg" href="https://t.me/Armenmonch" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M21 4L3 11l6 2 2 6 3-4 5 4 2-15z"/><path d="M9 13l8-6"/></svg>
+          Записаться на консультацию
+        </a>      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. ОБО МНЕ ===== -->
+  <section class="about">
+    <div class="wrap about-grid">
+      <span class="eyebrow">Обо мне</span>
+      <div>
+        <p class="reveal">Я психолог, веду частную практику с&nbsp;2024&nbsp;года.</p>
+        <p class="reveal">За плечами два высших образования и подготовка в трёх подходах.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. ЦИФРЫ ===== -->
+  <section class="numbers">
+    <div class="wrap">
+      <div class="nums">
+        <div class="reveal"><span class="num" data-to="2">2</span><p>высших образования: РНИМУ им.&nbsp;Пирогова и&nbsp;НИУ&nbsp;ВШЭ, консультативная психология и&nbsp;персонология</p></div>
+        <div class="reveal"><span class="num">2024</span><p>с этого года веду частную практику</p></div>
+        <div class="reveal"><span class="num" data-to="3">3</span><p>направления подготовки: экзистенциальная психология, гештальт-терапия, транзактный анализ</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5б. ОБРАЗОВАНИЕ ===== -->
+  <section class="education">
+    <div class="wrap">
+      <span class="eyebrow">Образование</span>
+      <h2 class="reveal">Где я <em>учился</em></h2>
+
+      <div class="edu-group">
+        <p class="edu-title reveal">Высшее образование</p>
+        <ul class="edu-list">
+          <li class="reveal">
+            <span class="edu-year">2025</span>
+            <div>
+              <b>НИУ «Высшая школа экономики», Москва</b>
+              <span>Магистратура, факультет социальных наук. Консультативная психология и&nbsp;персонология</span>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="edu-year">2023</span>
+            <div>
+              <b>РНИМУ им.&nbsp;Н.&nbsp;И.&nbsp;Пирогова, Москва</b>
+              <span>Институт клинической психологии и социальной работы</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="edu-group">
+        <p class="edu-title reveal">Повышение квалификации</p>
+        <ul class="edu-list">
+          <li class="reveal">
+            <span class="edu-year">Сейчас</span>
+            <div>
+              <b>Гештальт-терапия</b>
+              <span>Московский институт гештальт-терапии и&nbsp;консультирования, прохожу обучение</span>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="edu-year">2025</span>
+            <div>
+              <b>Coach in Transactional Analysis</b>
+              <span>International Coaches Union</span>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="edu-year">2024</span>
+            <div>
+              <b>Экзистенциальная психология</b>
+              <span>Академия психологии и психотерапии</span>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="edu-year">2024</span>
+            <div>
+              <b>Психолог-психодиагност</b>
+              <span>Академия психологии и психотерапии</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. ОТЗЫВЫ ===== -->
+  <section class="reviews">
+    <div class="wrap">
+      <span class="eyebrow">Отзывы</span>
+      <h2 class="reveal">Что говорят <em>клиенты</em></h2>
+      <p class="swipe-hint muted" aria-hidden="true">Листайте вбок →</p>
+      <div class="review-list" tabindex="0" aria-label="Отзывы клиентов">
+        <figure>
+          <blockquote>Я пришла с запросом, что никак не могу организовать себя и свою работу. Но на деле мы нашли первопричину моей проблемы и устранили её на корню. Мне больше не страшно! Я знаю, что всё зависит от меня и от ошибки мир не рухнет.</blockquote>
+          <figcaption>Отзыв клиента · июль 2025</figcaption>
+        </figure>
+        <figure>
+          <blockquote>Спокойная, комфортная обстановка. Человек ведёт, слышит, слушает, понимает и очень понятно объясняет. После каждого сеанса клубки распутывались. Я смело могу назвать Армена профессионалом!</blockquote>
+          <figcaption>Отзыв клиента · август 2025</figcaption>
+        </figure>
+        <figure>
+          <blockquote>Мне очень понравились наши сессии. Их было всего две, но они уже помогли мне справиться с непростым состоянием. Вы сумели разглядеть то, о чём я не задумывалась. А ещё ваши техники хорошо работают, спасибо!</blockquote>
+          <figcaption>Отзыв клиента · август 2024</figcaption>
+        </figure>
+        <figure>
+          <blockquote>С первой встречи я почувствовала ваше искреннее участие и профессионализм. Это помогло мне раскрывать свои эмоции и довериться вам. Спасибо за теплоту, понимание и поддержку.</blockquote>
+          <figcaption>Отзыв клиента · май 2024</figcaption>
+        </figure>
+        <figure>
+          <blockquote>Я чувствую, даже через экран, что тебе небезразлична моя ситуация. Что ты искренне сопереживаешь и хочешь, чтобы все проблемы поскорее решились.</blockquote>
+          <figcaption>Отзыв клиента об онлайн-встречах · май 2024</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. КОНТАКТЫ ===== -->
+  <div class="contacts-wrap">
+    <section class="contacts" id="contacts">
+      <svg class="contacts-shapes" viewBox="0 0 320 320" aria-hidden="true">
+        <circle class="sh2" cx="160" cy="160" r="150" fill="none" stroke="#CFE6FF" stroke-width="1.2" opacity=".5"/>
+        <circle class="sh2" cx="160" cy="160" r="70" fill="#CFE6FF" opacity=".16"/>
+      </svg>
+      <div class="wrap">
+        <span class="eyebrow">Запись</span>
+        <h2 class="reveal">Напишите, <em>когда будете готовы</em></h2>
+        <p class="lead reveal">Пары слов о запросе достаточно. Дальше подскажу, с чего начать.</p>
+        <div class="cta-block">
+          <a class="btn btn-light js-tg" href="https://t.me/Armenmonch" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M21 4L3 11l6 2 2 6 3-4 5 4 2-15z"/><path d="M9 13l8-6"/></svg>
+            Записаться на консультацию
+          </a>        </div>
+        <div class="secondary-links">
+          <a class="text-link js-mail" href="mailto:armrnimu2021@mail.ru">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3.5 7l8.5 6 8.5-6"/></svg>
+            Написать на почту
+          </a>
+          <a class="text-link js-channel" href="https://www.instagram.com/armenmoncho/" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>Армен Арзуманян · психолог</footer>
+
+<!-- Главная кнопка, закреплённая при скролле -->
+<div class="sticky-cta is-hidden" id="sticky-cta">
+  <a class="btn btn-cobalt js-tg" href="https://t.me/Armenmonch" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M21 4L3 11l6 2 2 6 3-4 5 4 2-15z"/><path d="M9 13l8-6"/></svg>
+    Записаться на консультацию
+  </a>
+</div>
+
+<script>
+  /* Закреплённая кнопка: прячется, пока на экране другая кнопка записи или блок контактов */
+  (function () {
+    var bar = document.getElementById("sticky-cta");
+    var targets = Array.prototype.slice.call(document.querySelectorAll(".cta-block")).concat(document.getElementById("contacts"));
+    if (!("IntersectionObserver" in window)) { bar.classList.remove("is-hidden"); return; }
+    var visible = new Set();
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { e.isIntersecting ? visible.add(e.target) : visible.delete(e.target); });
+      bar.classList.toggle("is-hidden", visible.size > 0);
+    });
+    targets.forEach(function (t) { io.observe(t); });
+  })();
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script>
+  window.addEventListener("DOMContentLoaded", function () {
+    // Без GSAP или при reduced motion всё остаётся видимым.
+    // Текст, кнопка и фото первого экрана не анимируются: они видны сразу.
+    if (!window.gsap || !window.ScrollTrigger) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Декоративные фигуры мягко выплывают
+    var tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+    tl.from(".sh-ring", { scale: .7, opacity: 0, transformOrigin: "50% 50%", duration: 1.4 }, 0.1)
+      .from(".sh-ball", { y: 60, opacity: 0, duration: 1.2 }, 0.3)
+      .from(".sh-half", { y: 40, opacity: 0, duration: 1.2 }, 0.45)
+      .from(".sh-cap",  { x: 60, opacity: 0, duration: 1.2 }, 0.55);
+
+    gsap.to(".sh-ball", { y: -14, duration: 3.4, ease: "sine.inOut", yoyo: true, repeat: -1, delay: 1.6 });
+    gsap.to(".sh-cap",  { x: 14,  duration: 4,   ease: "sine.inOut", yoyo: true, repeat: -1, delay: 1.6 });
+    gsap.to(".sh-ring", { rotation: 8, transformOrigin: "50% 50%", duration: 6, ease: "sine.inOut", yoyo: true, repeat: -1 });
+
+    // Блоки ниже первого экрана появляются при прокрутке
+    gsap.utils.toArray(".reveal").forEach(function (el) {
+      gsap.from(el, { y: 24, opacity: 0, duration: .8, ease: "power2.out",
+        scrollTrigger: { trigger: el, start: "top 92%", once: true } });
+    });
+
+    gsap.from(".sh2", { scale: .6, opacity: 0, transformOrigin: "50% 50%", stagger: .15, duration: 1.4, ease: "power3.out",
+      scrollTrigger: { trigger: ".contacts", start: "top 80%", once: true } });
+
+    // Небольшие цифры считаются от 0 (ширина блока фиксирована, ничего не прыгает)
+    gsap.utils.toArray(".num[data-to]").forEach(function (el) {
+      var to = +el.dataset.to, obj = { v: 0 };
+      gsap.to(obj, { v: to, duration: 1.2, ease: "power2.out",
+        scrollTrigger: { trigger: el, start: "top 90%", once: true,
+          onEnter: function () { el.textContent = "0"; } },
+        onUpdate: function () { el.textContent = Math.round(obj.v); } });
+    });
+  });
+</script>
+</body>
+</html>
